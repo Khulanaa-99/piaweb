@@ -50,9 +50,39 @@
                     <label for="food-tsuiwan">Цуйван</label>
                 </p>
                 <p>
-                    <input type="checkbox" id-"food-salad" 
+                    <input type="checkbox" id="food-salad" name="food" value="salad">
+                    <label for="food-salad">Салат</label> 
+                </p>
+                <p>
+                    <input type="checkbox" id="food-soup" nme="food" value="soup">
+                    <label for="food=soup">Шөл</label>
                 </p>
             </fieldset>
+
+            <p>
+                <label for="course">Курс</label>
+                <select id="course" name="course">
+                    <option value="1">1-р курс</option>
+                    <option value="2">2-р курс</option>
+                    <option value="3">3-р курс</option>
+                    <option value="4">4-р курс</option>
+                </select>
+            </p>
+            <p>
+                <label for="comment">Сэтгэгдэл</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+            </p>
+            <p>
+                <label for="visit">Сүүлчийн очсон огноо</label>
+                <input type="date" id="visit" name="visit">
+            </p>
+            <p>
+                <label for="rating">Сэтгэл ханамж(1-10)</label>
+                <input type="rang" id="rating" name="rating" min="1" max="10" value="5">
+            </p>
+
+            <button type="sumbit">Илгээх</button>
+            <button type="reset">Цэвэрлэх</button>
         </form>
     </body>
 </html>

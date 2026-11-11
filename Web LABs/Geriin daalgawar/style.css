@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: hwb(0 94% 5%);
+}
+
+.price-card {
+  width: 500px;
+  margin: 40px auto;
+  padding: 100px;
+  background: #dca8d0;
+  border: 1px solid #d9deea;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(29, 53, 87, 0.12);
+}

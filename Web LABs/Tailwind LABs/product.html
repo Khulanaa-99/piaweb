@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jersey / Wild Mind / — MZ Shop</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<!-- body-д index.html-тэй ижил class өг -->
+
+<body>
+
+  <!-- HEADER: index.html дээр бичсэн header-ээ энд хуулж тавь.
+       Сагсны тооны span-д id="cart-count" нэм — JavaScript үүгээр олно. -->
+  <header>
+    <a href="index.html">MZ <span>SHOP</span></a>
+    <a href="#">
+      🛒 Сагс
+      <span id="cart-count">0</span>
+    </a>
+  </header>
+
+
+  <main class="max-w-6xl mx-auto px-6 py-8">
+
+    <!-- Зам (breadcrumb) -->
+    <p>
+      <a href="index.html">Бүгд</a> / <span>Jersey</span>
+    </p>
+
+    <!-- АЛХАМ 6: ХОЁР БАГАНА — зураг | мэдээлэл (grid md:grid-cols-2) -->
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- АЛХАМ 6: ЗҮҮН ТАЛ — зургийн цомог -->
+      <!-- 5 баганын 1-д жижиг зургууд, 4-т том зураг (grid-cols-5, col-span-4) -->
+      <div class="grid grid-cols-5 gap-4">
+
+        <!-- Жижиг зургууд: class="thumb"-ыг бүү устга, JavaScript үүгээр олно -->
+        <div class="flex flex-col gap-3">
+          <img src="images/jersey-1.svg" class="thumb w-full rounded-lg cursor-pointer border-2 border-sky-400" alt="Урд тал" class="thumb">
+          <img src="images/jersey-2.svg" class="thumb w-full rounded-lg cursor-pointer border-2 border-transparent" alt="Ар тал" class="thumb">
+          <img src="images/jersey-3.svg" class="thumb w-full rounded-lg cursor-pointer border-2 border-transparent" alt="Хэмжээний хүснэгт" class="thumb">
+        </div>
+
+        <!-- Том зураг -->
+        <img id="main-image" src="images/jersey-1.svg" class="col-span-4 w-full rounded-2xl" alt="Jersey Wild Mind">
+
+      </div>
+
+
+      <!-- АЛХАМ 7: БАРУУН ТАЛ — бүтээгдэхүүний мэдээлэл -->
+      <div>
+        <h1 class="text-3xl font-semibold">Jersey / Wild Mind /</h1>
+        <p class="text-3xl font-bold mt-4">150,000₮</p>
+
+        <p>
+          Энэхүү бүтээгдэхүүнийг ХУД, 19-р хороолол, Sumber Tower-ийн 1 давхарт
+          байрлах дэлгүүрээс бэлнээр худалдан авах боломжтой.
+        </p>
+
+        <!-- Хэмжээ сонгох: class="size-btn"-ыг бүү устга -->
+        <p class="text-sm font-semibold mt-6 mb-2">Хэмжээ:</p>
+        <div class="flex flex-wrap gap-2">
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">S</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">M</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">L</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">XL</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">2XL</button>
+        </div>
+
+        <!-- Тоо ширхэг -->
+        <div class="inline-flex items-center border border-slate-700 rounded-lg mt-6">
+          <button id="minus" class="w-11 h-11">−</button>
+          <span id="qty" class="w-12 text-center">1</span>
+          <button id="plus" class="w-11 h-11">+</button>
+        </div>
+
+        <p>🚚 Хүргэлттэй</p>
+
+        <!-- Товчнууд -->
+        <div class="flex gap-3 mt-4">
+          <button id="add-to-cart" class="flex-1 border border-slate-700 py-3 rounded-lg">🛒 Сагслах</button>
+          <button class="flex-1 bg-sky-400 text-slate-950 font-semibold py-3 rounded-lg">Худалдан авах</button>
+        </div>
+
+        <!-- JavaScript энд мэдэгдэл бичнэ -->
+        <p id="message" class="text-sm text-sky-400 mt-4"></p>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p>Сургалтын жишээ хуудас — mongolz.shop сайтаас санаа авав.</p>
+  </footer>
+
+</body>
+
+</html>

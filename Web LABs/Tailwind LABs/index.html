@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MZ Shop — Нүүр хуудас</title>
+
+  <!-- Tailwind CSS-ийг CDN-ээр холбох (суулгах шаардлагагүй) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<!-- АЛХАМ 1: body-д хар дэвсгэр, цагаан текст өг (bg-slate-950 text-white) -->
+
+<body>
+
+  <!-- АЛХАМ 1: ЗАРЫН МӨР -->
+  <!-- Цэнхэр дэвсгэртэй, голлуулсан жижиг текст -->
+  <div class="bg-sky-400 text-slate-950 text-center text-sm py-2">
+    Shopping from abroad? Visit our international store →
+  </div>
+
+
+  <!-- АЛХАМ 2: HEADER — лого · цэс · сагс -->
+  <!-- flex, items-center, justify-between ашиглана -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-slate-800">
+
+    <!-- Лого -->
+    <a href="index.html" class="text-xl font-bold">MZ <span class="text-sky-400">SHOP</span></a>
+
+    <!-- Цэс: утсан дээр нуугдана (hidden md:flex) -->
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="#" class="hover:text-sky-400">Lifestyle</a>
+      <a href="#" class="hover:text-sky-400">Jersey</a>
+      <a href="#" class="hover:text-sky-400">Accessories</a>
+      <a href="#" class="hover:text-sky-400">Land art</a>
+    </nav>
+
+    <!-- Сагс -->
+    <a href="#" lass="text-sm">
+      🛒 Сагс
+      <span class="bg-sky-400 text-slate-950 text-xs font-bold px-2 py-1 rounded-full">0</span>
+    </a>
+
+  </header>
+
+
+  <!-- АЛХАМ 3: HERO — том баннер -->
+  <section class="bg-sky-200 text-slate-900 text-center py-20 px-6">
+    <p class="text-sm font-semibold tracking-widest">MONGOLZ SHOP</p>
+    <h1 class="text-4xl md:text-6xl font-bold mt-4">PLAY HARD &amp; DRIP HARDER</h1>
+    <a href="#products" class="inline-block mt-8 bg-slate-950 text-white px-8 py-3 rounded-full hover:bg-sky-600">Дэлгүүр хэсэх</a>
+  </section>
+
+
+  <!-- АЛХАМ 3: АНГИЛАЛ -->
+  <section class="bg-slate-800 py-8 px-6">
+    <div class="flex flex-wrap justify-center gap-10 text-center text-xs font-semibold">
+      <a href="#">
+        <div class="text-4xl mb-2">🧥</div>LIFESTYLE
+      </a>
+      <a href="#">
+        <div class="text-4xl mb-2">👕</div>JERSEY
+      </a>
+      <a href="#">
+        <div class="text-4xl mb-2">🎒</div>ACCESSORIES
+      </a>
+      <a href="#">
+        <div class="text-4xl mb-2">🌲</div>LAND ART
+      </a>
+    </div>
+  </section>
+
+
+  <!-- АЛХАМ 4, 5: БҮТЭЭГДЭХҮҮНИЙ ЖАГСААЛТ -->
+  <main id="products" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-sky-400 mb-6">Онцлох</h2>
+
+    <!-- АЛХАМ 5: энэ div-ийг grid болго (утсанд 2 багана, md-ээс дээш 4 багана) -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- АЛХАМ 4: нэг картыг загварчил -->
+      <a href="product.html" class="group">
+        <div class="relative">
+          <img src="images/jersey-1.svg" alt="Jersey Wild Mind" class="rounded-xl w-full group-hover:opacity-80">
+          <span class="absolute top-2 right-2 bg-white text-slate-900 text-xs px-2 py-1 rounded-full">🔥 Эрэлттэй</span>
+        </div>
+        <h3 class="mt-3 text-sm">Jersey / Wild Mind /</h3>
+        <p class="text-sky-400 text-sm mt-1">150,000₮</p>
+      </a>
+
+      <a href="product.html" class="group">
+        <div class="relative">
+          <img src="images/jersey-1.svg" alt="Jersey Wild Mind" class="rounded-xl w-full group-hover:opacity-80">
+          <span class="absolute top-2 right-2 bg-white text-slate-900 text-xs px-2 py-1 rounded-full">🔥 Эрэлттэй</span>
+        </div>
+        <h3 class="mt-3 text-sm">JBeige Zip-Up Hoodie</h3>
+        <p class="text-sky-400 text-sm mt-1">250,000₮</p>
+      </a>
+
+      <a href="product.html" class="group">
+        <div class="relative">
+          <img src="images/jersey-1.svg" alt="Jersey Wild Mind" class="rounded-xl w-full group-hover:opacity-80">
+          <span class="absolute top-2 right-2 bg-white text-slate-900 text-xs px-2 py-1 rounded-full">🔥 Эрэлттэй</span>
+        </div>
+        <h3 class="mt-3 text-sm">Black Zip-Up Hoodie</h3>
+        <p class="text-sky-400 text-sm mt-1">250,000₮</p>
+      </a>
+
+      <a href="product.html" class="group">
+        <div class="relative">
+          <img src="images/jersey-1.svg" alt="Jersey Wild Mind" class="rounded-xl w-full group-hover:opacity-80">
+          <span class="absolute top-2 right-2 bg-white text-slate-900 text-xs px-2 py-1 rounded-full">🔥 Эрэлттэй</span>
+        </div>
+        <h3 class="mt-3 text-sm">Windbreaker</h3>
+        <p class="text-sky-400 text-sm mt-1">280,000₮</p>
+      </a>
+
+      <!-- АЛХАМ 5: дээрх картыг хуулж 3 карт нэм.
+           Зураг: images/hoodie-beige.svg, images/hoodie-black.svg, images/windbreaker.svg
+           Нэр:   Beige Zip-Up Hoodie, Black Zip-Up Hoodie, Windbreaker
+           Үнэ:   250,000₮, 250,000₮, 280,000₮ -->
+
+    </div>
+  </main>
+
+
+  <!-- АЛХАМ 5: FOOTER — md-ээс дээш 3 багана -->
+  <footer class="border-t border-slate-800 px-6 py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-sm text-slate-400">
+      <div>
+        <h4 class="text-white font-semibold mb-2">Хүргэлтийн нөхцөл</h4>
+        <p>Захиалга баталгаажсанаас хойш 24–72 цагийн дотор хүргэнэ.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-2">Төлбөрийн нөхцөл</h4>
+        <p>Төлбөрөө QPay системээр төлөх боломжтой.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-2">Холбоо барих</h4>
+        <p>Instagram, Facebook хаягийн чатаар холбогдоорой.</p>
+      </div>
+    </div>
+    <p>Сургалтын жишээ хуудас — mongolz.shop сайтаас санаа авав.</p>
+  </footer>
+
+</body>
+
+</html>

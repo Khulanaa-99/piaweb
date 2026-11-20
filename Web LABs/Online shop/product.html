@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гоо сайхан / Үнэртэй ус</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">SONE <span>Shop</span></a>
+    <a href="#">
+      🛒 Сагс
+      <span id="cart-count">0</span>
+    </a>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-8">
+
+    <p>
+      <a href="index.html">Бүгд</a> / <span>Гоо сайхан</span>
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="grid grid-cols-5 gap-4">
+
+        <div class="flex flex-col gap-3">
+          <img src="https://fimgs.net/himg/o.o9BToz7R5jy.jpg" class="thumb w-full rounded-lg cursor-pointer border-2 border-sky-400" alt="Урд тал" class="thumb">
+          <img src="https://fimgs.net/himg/o.o9BToz7R5jy.jpg" class="thumb w-full rounded-lg cursor-pointer border-2 border-transparent" alt="Ар тал" class="thumb">
+          <img src="https://fimgs.net/himg/o.o9BToz7R5jy.jpg" class="thumb w-full rounded-lg cursor-pointer border-2 border-transparent" alt="Хэмжээний хүснэгт" class="thumb">
+        </div>
+
+        <img id="main-image" src="https://fimgs.net/himg/o.o9BToz7R5jy.jpg" class="col-span-4 w-full rounded-2xl" alt="Jersey Wild Mind">
+
+      </div>
+      <div>
+        <h1 class="text-3xl font-semibold">Miss dior parfume</h1>
+        <p class="text-3xl font-bold mt-4">550,000₮</p>
+
+        <p>
+          Miss Dior Essence: Жимслэг болон цэцэгсийн ноотыг модлог, хувны дулаан аккордтой хослуулсан, илүү өтгөн бөгөөд хүчтэй хувилбар юм.
+        </p>
+
+        <p class="text-sm font-semibold mt-6 mb-2">Хэмжээ:</p>
+        <div class="flex flex-wrap gap-2">
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">10ml</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">30ml</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">50ml</button>
+          <button class="size-btn w-11 h-11 rounded-full border border-slate-700 text-sm hover:border-sky-400">100ml</button>
+        </div>
+
+        <div class="inline-flex items-center border border-slate-700 rounded-lg mt-6">
+          <button id="minus" class="w-11 h-11">−</button>
+          <span id="qty" class="w-12 text-center">1</span>
+          <button id="plus" class="w-11 h-11">+</button>
+        </div>
+
+        <p>🚚 Хүргэлттэй</p>
+
+
+        <div class="flex gap-3 mt-4">
+          <button id="add-to-cart" class="flex-1 border border-slate-700 py-3 rounded-lg">🛒 Сагслах</button>
+          <button class="flex-1 bg-sky-400 text-slate-950 font-semibold py-3 rounded-lg">Худалдан авах</button>
+        </div>
+
+    
+        <p id="message" class="text-sm text-sky-400 mt-4"></p>
+      </div>
+        </div>
+
+  </main>
+
+
+  <footer>
+    <p>Sone online shop...</p>
+  </footer>
+
+</body>
+
+</html>
+
+
